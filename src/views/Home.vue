@@ -1,7 +1,16 @@
 <template>
-  <HelloWorld />
+  <v-app>
+    <NavBar />
+
+    <v-main>
+      <v-container>
+
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+import NavBar from '@/components/NavBar.vue'
+
 </script>
