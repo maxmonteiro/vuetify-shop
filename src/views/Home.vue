@@ -11,6 +11,24 @@
           <v-carousel>
             <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
 
+              <v-row >
+
+                <v-col cols="12" sm="6">
+                  <div class="d-flex fill-height justify-center">
+                    <h2 class="text-white top">{{ item.title }}</h2>
+                  </div>
+
+                  <div class="d-flex fill-height justify-center">
+                    <p class="text-white text">{{ item.text }}</p>
+                  </div>
+
+                  <div class="d-flex fill-height justify-center">
+                    <v-btn class="button">Buy Now</v-btn>
+                  </div>
+                </v-col>
+
+              </v-row>
+
             </v-carousel-item>
           </v-carousel>
 
@@ -70,3 +88,22 @@ items.value = [
 ]
 
 </script>
+
+<style scoped>
+.top {
+  margin-top: 6.25rem;
+}
+
+.text {
+  margin-top: -2.5rem;
+  margin-left: 5rem;
+}
+
+.top-day {
+  margin-top: 7.5rem
+}
+
+.button {
+  margin-top: -7.5rem;
+}
+</style>
