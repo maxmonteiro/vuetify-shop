@@ -44,7 +44,7 @@
           </v-toolbar>
 
           <v-col cols="12" sm="12" class="mt-n10">
-            <!-- Products popular session -->
+            <Popular />
           </v-col>
 
         </v-row>
@@ -60,6 +60,7 @@
 import { ref } from 'vue'
 
 import NavBar from '@/components/NavBar.vue'
+import Popular from '@/components/Popular.vue'
 
 interface Item {
   src: string,
