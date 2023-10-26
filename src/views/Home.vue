@@ -6,33 +6,48 @@
 
       <v-container>
 
-        <v-col cols="12" sm="12">
+        <v-row>
 
-          <v-carousel>
-            <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
+          <v-col cols="12" sm="12">
 
-              <v-row >
+            <v-carousel>
+              <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" cover>
 
-                <v-col cols="12" sm="6">
-                  <div class="d-flex fill-height justify-center">
-                    <h2 class="text-white top">{{ item.title }}</h2>
-                  </div>
+                <v-row >
 
-                  <div class="d-flex fill-height justify-center">
-                    <p class="text-white text">{{ item.text }}</p>
-                  </div>
+                  <v-col cols="12" sm="6">
+                    <div class="d-flex fill-height justify-center">
+                      <h2 class="text-white top">{{ item.title }}</h2>
+                    </div>
 
-                  <div class="d-flex fill-height justify-center">
-                    <v-btn class="button">Buy Now</v-btn>
-                  </div>
-                </v-col>
+                    <div class="d-flex fill-height justify-center">
+                      <p class="text-white text">{{ item.text }}</p>
+                    </div>
 
-              </v-row>
+                    <div class="d-flex fill-height justify-center">
+                      <v-btn class="button">Buy Now</v-btn>
+                    </div>
+                  </v-col>
 
-            </v-carousel-item>
-          </v-carousel>
+                </v-row>
 
-        </v-col>
+              </v-carousel-item>
+            </v-carousel>
+
+          </v-col>
+
+          <v-toolbar color="transparent">
+            <v-toolbar-title>Popular Products</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn icon="mdi mdi-chevron-left"></v-btn>
+            <v-btn icon="mdi mdi-chevron-right"></v-btn>
+          </v-toolbar>
+
+          <v-col cols="12" sm="12" class="mt-n10">
+            <!-- Products popular session -->
+          </v-col>
+
+        </v-row>
 
       </v-container>
 
