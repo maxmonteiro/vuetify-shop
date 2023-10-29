@@ -20,7 +20,7 @@
               size="small"
             ></v-rating>
             <v-spacer></v-spacer>
-            <div class="text-gray ms-4">{{ popular.price }}</div>
+            <div class="text-grey ms-4">{{ popular.price }}</div>
           </v-row>
         </v-card-text>
       </v-card>
