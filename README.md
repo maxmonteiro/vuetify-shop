@@ -1,4 +1,4 @@
-# base
+# A simple shop template using Vuetify + Vue3
 
 ## Project setup
 
