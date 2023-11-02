@@ -149,6 +149,8 @@
 
       </v-container>
 
+      <Footer />
+
     </v-main>
 
   </v-app>
@@ -161,6 +163,7 @@ import NavBar from '@/components/NavBar.vue'
 import Popular from '@/components/Popular.vue'
 import Featured from '@/components/Featured.vue'
 import Client from '@/components/Client.vue'
+import Footer from '@/components/Footer.vue'
 
 interface Item {
   src: string,
